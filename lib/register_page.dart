@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:parse_server_sdk/parse_server_sdk.dart';
 import 'package:todo_cross_assg/main.dart';
+import 'package:todo_cross_assg/login_page.dart';
 class RegisterPage extends StatefulWidget {
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -74,7 +75,7 @@ class _RegisterPageState extends State<RegisterPage> {
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home())); // Navigate to login page
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage())); // Navigate to login page
               },
               child: Text("OK"),
             ),
