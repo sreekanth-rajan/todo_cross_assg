@@ -14,8 +14,8 @@ class _LoginPageState extends State<LoginPage> {
 
   Future<void> _loginUser() async {
     try {
-      final TextEditingController _usernameController = TextEditingController();
-      final TextEditingController _passwordController = TextEditingController();
+      // final TextEditingController _usernameController = TextEditingController();
+      // final TextEditingController _passwordController = TextEditingController();
 
       // final user = await ParseUser.login(_usernameController.text, _passwordController.text);
       // Navigate to home screen or show success message

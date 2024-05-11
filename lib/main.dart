@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
-import 'package:todo_cross_assg/register_page.dart';
+// import 'package:todo_cross_assg/register_page.dart';
 import 'package:todo_cross_assg/login_page.dart';
 
 void main() async {
@@ -18,7 +18,7 @@ void main() async {
     liveQueryUrl: 'mybitsassignment.b4a.io',
     debug: true,
   );
-   final currentUser = await ParseUser.currentUser();
+  //  final currentUser = await ParseUser.currentUser();
   // Widget initialScreen = currentUser != null ? Home() : LoginPage();
   Widget initialScreen = LoginPage();
 
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
   late Subscription<ParseObject> subscription;
   Color _deleteIconColor = Colors.red;
   bool showCompletedTasks = true;
-  bool _isCompleted = false;
+  // bool _isCompleted = false;
 
   @override
   void initState() {
@@ -201,10 +201,10 @@ class _HomeState extends State<Home> {
                           final varTask = filteredTasks[index];
                           final varTitle = varTask.get<String>('title');
                           final varDescription = varTask.get<String>('description');
-                          final varDone = varTask?.get<bool>('done')?? false;
+                          final varDone = varTask.get<bool>('done')?? false;
                           final dueAt = varTask.get<DateTime>('dueDate');
-                          final createdAt = varTask.get<DateTime>('createdAt');
-                          final completedAt = varTask.get<DateTime>('completedAt');
+                          // final createdAt = varTask.get<DateTime>('createdAt');
+                          // final completedAt = varTask.get<DateTime>('completedAt');
 
                           return GestureDetector(
                             onTap: () {
@@ -253,7 +253,7 @@ class _HomeState extends State<Home> {
                                    Switch(
                                     value: varDone,
                                     onChanged: (value) async {
-                                      await updateTask(varTask.objectId!, value!);
+                                      await updateTask(varTask.objectId!, value);
                                     },
                                     // shape: RoundedRectangleBorder(
                                     //   borderRadius: BorderRadius.circular(30.0),
