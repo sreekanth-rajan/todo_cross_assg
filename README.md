@@ -1,6 +1,6 @@
 # todo_cross_assg
 
-A new Flutter project.
+Building a To-Do Application using Flutter and Back4App for BITS Cross Platform Assignment.
 
 ## Getting Started
 
