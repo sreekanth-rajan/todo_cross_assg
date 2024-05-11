@@ -135,11 +135,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Time is Ticking !!!!", 
+        title: const Text("Its the time !", 
         style:
-              TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 180, 215, 244))
+              TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 0, 0))
        ),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.yellow,
         centerTitle: true,
         actions: [
           PopupMenuButton(
@@ -369,9 +369,9 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quick Task - Edit', style:
-              TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 180, 215, 244))),
-        backgroundColor: Colors.blueAccent,
+        title: const Text('Update your task', style:
+              TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 0, 0))),
+        backgroundColor: Colors.lime,
         centerTitle: true
       ),
       body: Padding(
@@ -385,7 +385,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
               controller: taskController,
               decoration: const InputDecoration(
                 labelText: "Task Title",
-                labelStyle: TextStyle(color: Colors.blueAccent),
+                labelStyle: TextStyle(color: Color.fromARGB(255, 73, 73, 73)),
               ),
             ),
             TextField(
@@ -394,7 +394,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
               controller: descriptionController,
               decoration: const InputDecoration(
                 labelText: "Task Description",
-                labelStyle: TextStyle(color: Colors.blueAccent),
+                labelStyle: TextStyle(color: Color.fromARGB(255, 55, 55, 55)),
               ),
             ),
             TextFormField(
@@ -466,9 +466,9 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quick Task - Add', style:
-              TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 180, 215, 244))),
-        backgroundColor: Colors.blueAccent,
+        title: const Text('Add your task', style:
+              TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 0, 0))),
+        backgroundColor: Colors.lime,
         centerTitle: true
       ),
       body: Padding(
@@ -482,7 +482,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
               controller: taskController,
               decoration: const InputDecoration(
                 labelText: "Task Title",
-                labelStyle: TextStyle(color: Colors.blueAccent),
+                labelStyle: TextStyle(color: Color.fromARGB(255, 67, 67, 67)),
               ),
             ),
             TextField(
@@ -491,7 +491,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
               controller: descriptionController,
               decoration: const InputDecoration(
                 labelText: "Task Description",
-                labelStyle: TextStyle(color: Colors.blueAccent),
+                labelStyle: TextStyle(color: Color.fromARGB(255, 67, 67, 67)),
               ),
             ),
             TextFormField(

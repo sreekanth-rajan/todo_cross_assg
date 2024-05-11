@@ -26,8 +26,10 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( title: const Text('Register'),
-        backgroundColor: Colors.blueAccent,
+      appBar: AppBar( title: const Text('Register here!',
+      style:
+              TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 0, 0))),
+        backgroundColor: Colors.lime,
         centerTitle: true),
       body: Padding(
         padding: EdgeInsets.all(16.0),
